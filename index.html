@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration system</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="background">
+        <div class="header">
+            <div class="h1">
+            <h1 id="topic">Student Registration</h1>
+            </div>
+            <div class="errorList" id="errorList">
+                <ul class="errors" id="errors"></ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <form id="myForm">
+                <label for="name">Name :</label>
+                <input type="text" id="name" placeholder="Full Name"><br><br>
+                <p class="error" id="nameError"></p>
+
+                <label for="email">Email :</label>
+                <input type="text" id="email" placeholder="Email"><br><br>
+                <p class="error" id="emailError"></p>
+
+                <div class="row">
+                    <div class="field">
+                        <label for="password" class="pass">Password :</label><br>
+                        <input type="password" id="password" placeholder="Password"><br><br>
+                        <p class="error" id="passwordError"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="confirmPassword" class="pass">Confirm Password :</label><br>
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password"><br><br>
+                        <p class="error" id="confirmPasswordError"></p>
+                    </div>
+                </div>
+
+                <br>
+                <label for="nic">NIC :</label>
+                <input type="text" id="nic" placeholder="NIC"><br><br>
+                <p class="error" id="nicError"></p>
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" placeholder="Phone Number"><br><br>
+                <p class="error" id="phoneError"></p>
+
+                <div class="row">
+                    <div class="field">
+                        <label for="date">Date of Birth :</label>
+                        <input type="date" id="date" placeholder="Date of Birth"><br><br>
+                        <p class="error" id="dateError"></p>
+                    </div>
+
+                    <div class="field_1">
+                        <label for="gender">Gender :</label><br>
+                        <div class="row">
+                            <input type="radio" name="gender" value="male" id="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="female" id="female">
+                            <label for="female">Female</label><br><br>
+                            <p class="error" id="genderError"></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">I agree to the rules and regulations</label><br><br>
+                    <p class="error" id="agreeError"></p><br><br>
+                </div>
+
+                <button type="submit">Register</button>
+                <p id="message" class="message"></p>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
